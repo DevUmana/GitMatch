@@ -25,8 +25,8 @@ GitMatch is a social media app that enables users to explore and connect with de
 
 ## Usage
 
-Application Site [TDB](TBD)
-Application Walkthrough [TBD](TBD)
+- Application Site [https://git-match.netlify.app/](https://git-match.netlify.app/)
+- Application Walkthrough [https://drive.google.com/file/d/1DaNCH0hk9JsUXpNuMz5Tam8Dypamwy68/view](https://drive.google.com/file/d/1DaNCH0hk9JsUXpNuMz5Tam8Dypamwy68/view)
 
 ## License
 
@@ -58,7 +58,7 @@ I am open to any feedback and improvements that others may have!
 
 ## Tests
 
-### Home Page (Search)
+### Home Page
 
 - **Scenario:** User searches from the homepage
   - **Given:** The user is viewing the app on any device
@@ -79,7 +79,9 @@ I am open to any feedback and improvements that others may have!
   - **Given:** The user is viewing the app on any device
   - **When:** The user click on the add button (+)
   - **Then:** The developer will be added to the list of added developers that can be found in the Match page, a New Developer will also be displayed.
- 
+
+### Match Page
+
 - **Scenario:** Match Page
   - **Given:** The user is viewing the app on any device
   - **When:** The user land on the Match page
