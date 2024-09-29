@@ -113,4 +113,3 @@ For any questions, please contact me using the information below:
 GitHub: [DevUmana](https://github.com/DevUmana)
 
 Email: [dumana92@gmail.com](mailto:dumana92@gmail.com)
->>>>>>> 89b93881502326e3ddd33d3724afc3a2fb44aa08
