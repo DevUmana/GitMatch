@@ -91,10 +91,12 @@ const Table = ({ filterValue }: TableProps) => {
           ))}
         </tbody>
       </table>
-      {filteredCandidates.length === 0 ? (
+      {candidates.length === 0 ? (
         <p className="alert">
           No candidates listed, visit the home page to add some!
         </p>
+      ) : filteredCandidates.length === 0 ? (
+        <p className="alert">No candidates found matching the filter value</p>
       ) : (
         ""
       )}
