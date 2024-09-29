@@ -1,30 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter Tight", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
+  background: linear-gradient(
+    180deg,
+    rgb(32, 44, 136) 0%,
+    rgba(9, 9, 121, 1) 15%,
+    rgba(0, 2, 18, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -35,34 +34,220 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.button {
+  border: none;
+  font-size: 20px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.non-selectable {
+  user-select: none;
+  pointer-events: none;
+}
+
+main {
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.alert {
+  font-weight: bold;
+  color: #ff5f5f;
+}
+
+.headerSort {
+  white-space: nowrap;
+}
+
+.label {
+  display: inline-block;
+  padding-left: 10%;
+}
+
+.sort {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.sort button {
+  background-color: #00000000;
+  color: white;
+}
+
+.sort button:hover {
+  background-color: #333;
+}
+
+.sort button:active {
+  background-color: #666;
+}
+
+.sort span {
+  font-size: 10px;
+}
+
+.search
+{
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+tr {
+  border-radius: 10px;
+  background-color: #000;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #333333;
+}
+
+td {
+  text-align: center;
+  padding: 10px 20px;
+  min-width: 100px;
+}
+
+td img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+} 
+
+td .reject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 10px auto;
+  color: rgb(0, 0, 0);
+  background-color: #ff5f5f;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em 2em;
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+  list-style: none;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.table {
+  width: 80vw;
+  table-layout: fixed;
+}
+
+.nav-link-style {
+  text-decoration: none;
+}
+
+.active-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.searchPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchPage h1 {
+  margin: 0;
+}
+
+.cardSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 20vw;
+  margin: 1em;
+  border-radius: 30px;
+  background-color: #000;
+  color: white;
+}
+
+.card img {
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+}
+
+.cardInfo {
+  padding: 15px;
+}
+
+.cardInfo h3 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.cardInfo p {
+  display: flex;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.cardInfo .missing {
+  display: none;
+}
+
+.cardButton {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardButton button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cardButton .nope {
+  background-color: #ff5f5f;
+}
+
+.cardButton .yup {
+  background-color: #139f54;
+}
+
+.nope:active {
+  background-color: #e04b4b; /* Darker shade when pressed */
+}
+
+.yup:active {
+  background-color: #0f7d45; /* Darker shade when pressed */
 }
